@@ -1,0 +1,26 @@
+Proje 3
+[7,5,1,8,3,6,0,9,4,2] Binary tree
+
+First, we sort the array:
+[0,1,2,3,4,5,6,7,8,9]
+divide the array in half from 5
+[0,1,2,3,4] [5] [6,7,8,9]
+chose 1 middle element for each sub-tree
+while doing so, take 1 small for the left side and 1 greater for the right side so that our tree be balanced
+[0,1,2]/[3]/[4] /[5]/ [6]/[7]/[8,9]
+so our tree begin the construction as such:
+1)
+            5
+       3         7
+
+2)
+            5
+       3         7
+    1     4    6   8
+
+3)
+            5
+       3         7
+    1     4    6   8
+  0   2              9
+
